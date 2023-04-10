@@ -62,16 +62,6 @@ Para obtener los valores actuales de fecha y hora del servidor NTP, se llama a l
     timeClient.update();
 ~~~
 
-Para obtener los resultados, se realiza de dos formas distintas.
-
-La primera de ellas, es obteniendo el día de la semana, accediendo al método _getDay()_ y a la hora local mediante el método _getFormattedTime()_; el primero de ellos se imprime accediendo primero al arreglo _daysOfWeek_ que se encuentra en las líneas 43 a 46. El código de esta primera parte se encuentra entre las líneas 71 a 73 y se repite aquí para mayor comodidad:
-
-~~~ C++
-     Serial.print( daysOfTheWeek[timeClient.getDay()] );
-     Serial.print( ": ");
-     Serial.println(timeClient.getFormattedTime());
-~~~
-
 Para obtener el resultado, se lee del servidor el tiempo que se denomina _epoch time_ que no es otra cosa que la cantidad de segundos transcurridos desde las 0 horas del primero de Enero de 1970 en el meridiano de Greenwich pero corregidos de acuerdo a la zona horaria previamente declarada; este valor ocupa 4 bytes codificados como numero entero y de él, mediante cálculos, se pueden obtener todos los datos necesarios para la ubicación de la fecha y hora actuales, obviamente al segundo de precisión.
 
 Si bien estos cálculos no son difíciles de realizarlos mediante un programa en C, hay bibliotecas _standard_ de C (que provienen de Unix), que se pueden usar en Arduino y que convenientemente, solo hay que incluir _<time.h>_, como se ha realizado en el programa en la línea 36.
