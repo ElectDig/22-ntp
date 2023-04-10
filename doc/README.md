@@ -68,7 +68,8 @@ Si bien estos cálculos no son difíciles de realizarlos mediante un programa en
 
 Sería conveniente que el lector consulte los siguientes _links_ para tener la correcta especificación de esta biblioteca así como los detalles de la función de biblioteca _strftime_:
 
- [time library](https://es.wikipedia.org/wiki/Time.h)
+ [time library](https://es.wikipedia.org/wiki/Time.h)  
+
  [strftime function](http://man7.org/linux/man-pages/man3/strftime.3.html)
 
 Lo codigos que realizan todo el trabajo se encuentran entre las lineas 73 a 75
