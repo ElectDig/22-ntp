@@ -18,11 +18,11 @@
 
 ## Objetivo
 
->   El objetivo primordial de este proyecto es demostrar la capacidad de acceder a un servidor de hora (_NTP Server_)
->   Se accede a través de él para recabar datos de fecha y hora actuales.
->   Estos servidores se encuentran distribuídos a lo largo del mundo y, en el caso de Argentina, la dirección es _ar.pool.ntp.org_.
->
->   Usar con cualquier placa que use los procesadores con ESP32
+  El objetivo primordial de este proyecto es demostrar la capacidad de acceder a un servidor de hora (_NTP Server_)
+  Se accede a través de él para recabar datos de fecha y hora actuales.
+  Estos servidores se encuentran distribuídos a lo largo del mundo y, en el caso de Argentina, la dirección es _ar.pool.ntp.org_.
+
+  Usar con cualquier placa que use los procesadores con ESP32
 
 ## Programa
 
